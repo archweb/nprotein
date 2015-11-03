@@ -129,6 +129,11 @@ font-size: 14px;
 line-height: 26px;
 }
 
+.blog-record-list a img {
+	max-width: 100%;
+	height: auto;
+}
+
 .blog-record-list-small a {
 font-size: 14px;
 line-height: 18px;
@@ -189,8 +194,7 @@ text-decoration: none;
 border-bottom: 1px solid #000;
 }
 
-
-.blog-heading_title { width: 95%; height: 31px; line-height: 21px; border-bottom: 1px solid #ccc; margin-bottom: 10px;
+.blog-heading_title { width: 95%; height: 23px; line-height: 12px; border-bottom: 1px solid #ccc;
 }
 
 .blog-description {font-size: 14px; word-spacing:1px; letter-spacing: 0px; line-height: 21px;
@@ -199,7 +203,7 @@ border-bottom: 1px solid #000;
 .blog-image { float:left; margin-right: 5px; margin-bottom: 2px; margin-top: 8px;
 }
 
-.blog-divider { overflow: hidden; width: 95%; height: 1px;  padding-left: 0px; padding-top: 5px;
+.blog-divider { overflow: hidden; width: 90%; height: 1px;  padding-left: 0px; padding-top: 5px;
 }
 
 .blog-child_divider { overflow: hidden; width: 95%; line-height: 1px; margin-bottom: 2px;  border-bottom: 1px solid #f0f0f0;
@@ -874,4 +878,19 @@ border-bottom: 1px dashed;
 }
 
 .blog-textarea_height {height: 100px;
+}
+
+@media screen and (max-width: 480px) {
+	.blog-divider {
+		width: 85%;
+	}
+	.blog-record-list {
+		width: 90%;
+	}
+	.record-info {
+		width: 85%;
+	}
+	.blog-record-description img {
+		width: 100%;
+	}
 }

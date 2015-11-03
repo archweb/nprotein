@@ -1,5 +1,3 @@
-/**/
-
 html {
 	overflow: -moz-scrollbars-vertical;
 	margin: 0;
@@ -185,7 +183,6 @@ label {
 #column-right {
 	float: right;
 	width: 220px;
-    margin-top: 30px;
 }
 #content {
 	min-height: 400px;
@@ -274,8 +271,7 @@ label {
 #header #search {
 	position: absolute;
 	top: 10px;
-	right: 400px;
-	/*width: 298px;*/
+	right: calc(50% - 70px);
 	z-index: 15;
 	background: url('../image/sf-bg.gif');
 	border: 1px solid #E2E2E2;
@@ -1762,7 +1758,7 @@ a.button:hover, input.button:hover {
 	margin-bottom: 10px;
 }
 .product-info > .left + .right {
-	margin-left: 353px;
+	margin-left: 50%;
 }
 .product-info .image {
 	float: left;
@@ -2690,4 +2686,90 @@ display: none;
 }
 .banner div img {
 	margin-bottom: 20px;
+}
+
+/* Responsive
+------------------------------------------------------------*/
+
+@media screen and (max-width: 980px) {
+	#tlc #tlc-wrapper {
+		width: 95%;
+	}
+	#container {
+		width: 90%;
+	}
+	#menu {
+		height: 74px;
+	}
+	.breadcrumb {
+		width: calc(100% - 20px);
+	}
+	.slideshow .nivoSlider {
+		max-width: 100%;
+		height: auto;
+	}
+	.product-info > .left {
+		width: 50%;
+	}
+	.product-info .image {
+		width: 95%;
+	}
+	.product-info .image img {
+		max-width: 100%;
+		height: auto;
+	}
+	#footer #info {
+		width: 100%;
+	}
+	#footer .column {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#search {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 558px) {
+	#menu {
+		height: 111px;
+	}
+	#search {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	html {
+		-webkit-text-size-adjust: none;
+	}
+	#search {
+		display: none;
+	}
+	.featured-box > div {
+		width: 32%;
+	}
+	.product-info .review {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	#menu {
+		height: 148px;
+	}
+	#search {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	#menu {
+		height: 185px;
+	}
+	#search {
+		display: none;
+	}
 }

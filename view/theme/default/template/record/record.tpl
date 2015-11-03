@@ -1,25 +1,21 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content">
-<div>
-<?php echo $content_top; ?>
-
-  <div class="breadcrumb">
+<?php echo $header; ?>
+<div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
-  </div>
+</div>
+<?php echo $column_left; ?><?php echo $column_right; ?>
+<div id="content">
+<div>
+<?php echo $content_top; ?>
   <h1 class="blog-heading_title"><?php echo $heading_title; ?></h1>
   <div class="record-info" style="padding: 0; margin: 0;">
-
 	<div class="blog-small-record">
 	<ul>
 	     <?php if (isset ($settings_blog['view_date']) && $settings_blog['view_date'] ) { ?>
 			<li class="blog-data-record"> <?php echo $date_added; ?></li>
 	     <?php } ?>
-
-
 	 <?php if (isset ($settings_blog['view_comments']) && $settings_blog['view_comments'] ) { ?>
-	
 	<?php } ?>
 	 <?php if (isset ($settings_blog['view_viewed']) && $settings_blog['view_viewed'] ) { ?>
 	<li class="blog-viewed-record"><?php echo $text_viewed; ?> <?php echo $viewed; ?></li>

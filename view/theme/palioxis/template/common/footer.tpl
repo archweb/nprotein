@@ -24,9 +24,9 @@
   <div class="column">
     <h3>Подписываемся</h3>
     <ul>
-      <li><a href="http://vk.com/nprotein">Вконтакте</a></li>
-      <li><a href="http://facebook.com/nprotein">Facebook</a></li>
-      <li><a href="http://youtube.com/nprotein">YouTube</a></li>
+      <li><a href="http://vk.com/nprotein" target="_blank">Вконтакте</a></li>
+      <li><a href="http://facebook.com/nprotein" target="_blank">Facebook</a></li>
+      <li><a href="http://youtube.com/nprotein" target="_blank">YouTube</a></li>
     </ul>
   </div>
   <div class="column">
