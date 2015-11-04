@@ -880,6 +880,15 @@ border-bottom: 1px dashed;
 .blog-textarea_height {height: 100px;
 }
 
+@media screen and (max-width: 980px) {
+	.blog-record-list {
+		width: 99%;
+	}
+	.record-info {
+		width: 94%;
+	}
+}
+
 @media screen and (max-width: 480px) {
 	.blog-divider {
 		width: 85%;

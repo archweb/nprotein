@@ -2718,6 +2718,10 @@ display: none;
 		max-width: 100%;
 		height: auto;
 	}
+	p iframe {
+		width: 100%;
+		height: auto;
+	}
 	#footer #info {
 		width: 100%;
 	}
@@ -2745,6 +2749,12 @@ display: none;
 	html {
 		-webkit-text-size-adjust: none;
 	}
+	#tlc {
+		height: 45px;
+	}
+	#tlc-wrapper #welcome {
+		top: 25px;
+	}
 	#search {
 		display: none;
 	}
@@ -2766,6 +2776,12 @@ display: none;
 }
 
 @media screen and (max-width: 320px) {
+	#tlc {
+		height: 55px;
+	}
+	#tlc-wrapper #welcome {
+		top: 35px;
+	}
 	#menu {
 		height: 185px;
 	}
